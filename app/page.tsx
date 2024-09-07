@@ -12,8 +12,6 @@ export default function Home() {
                     className={'headshot'}
                     src={headshot}
                     alt="Image of Stefan Lier"
-                    width={256}
-                    height={256}
                 />
             </header>
             <main>
