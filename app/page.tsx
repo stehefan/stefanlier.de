@@ -2,6 +2,7 @@ import Image from 'next/image';
 import headshot from './images/headshot.png'
 import {IconBrandGithub, IconBrandLinkedin, IconMail} from '@tabler/icons-react';
 import ExperienceCard from "@/app/ExperienceCard/ExperienceCard";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -21,9 +22,16 @@ export default function Home() {
                     grow and create a culture of knowledge sharing in my projects.
                 </section>
                 <section className={'contact'}>
-                    <IconBrandGithub className={'contact-icon'} strokeWidth={1} color={'#fff'}/>
-                    <IconBrandLinkedin className={'contact-icon'} strokeWidth={1} color={'#fff'}/>
-                    <IconMail className={'contact-icon'} strokeWidth={1} color={'#fff'}/>
+                    <Link target={'_blank'} href={'https://www.github.com/stehefan'} aria-label={'Github-Link'}>
+                        <IconBrandGithub className={'contact-icon'} strokeWidth={1} color={'#fff'}/>
+                    </Link>
+                    <Link target={'_blank'} href={'https://www.linkedin.com/in/stefan-lier/'}
+                          aria-label={'LinkedIn-Link'}>
+                        <IconBrandLinkedin className={'contact-icon'} strokeWidth={1} color={'#fff'}/>
+                    </Link>
+                    <Link target={'_blank'} href={'mailto:info@stefanlier.de'} aria-label={'Email'}>
+                        <IconMail className={'contact-icon'} strokeWidth={1} color={'#fff'}/>
+                    </Link>
                 </section>
                 <section className={'experience'}>
                     <ExperienceCard
