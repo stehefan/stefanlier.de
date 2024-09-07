@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import headshot from './images/headshot.png'
 import {IconBrandGithub, IconBrandLinkedin, IconMail} from '@tabler/icons-react';
-import ExperienceCard from "@/app/ExperienceCard/ExperienceCard";
+import ExperienceCard from "@/app/components/ExperienceCard/ExperienceCard";
 import Link from "next/link";
 
 export default function Home() {
