@@ -1,6 +1,9 @@
+## stefanlier.de
+
+This is the source code of my personal website. It's mostly a Next.js project with some customizations - helping me to
+get more familiar with Next.js. So, for now at least, it's a bit overkill - but let's see where it leads me.
 
 ## Getting Started
-
 ### Prerequisites
 
 This project expects Node.js version v20.17.0 or higher. Use e.g. ode Version Manager (NVM) to install and manage
