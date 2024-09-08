@@ -13,7 +13,7 @@
 body {
   color: var(--text-color);
   background: var(--bg-color);
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: theme(fontFamily.sans);
 }
 
 h1, h2 {
