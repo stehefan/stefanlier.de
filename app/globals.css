@@ -3,17 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --light-background: #D9D9D9;
-  --accent-background: #B43F3F;
-  --headline-color: #D9D9D9;
+  --offwhite: #D9D9D9;
+  --accent-color: #B43F3F;
   --text-color: #000;
-  --icon-color: #D9D9D9;
+  --icon-color: var(--offwhite);
 }
 
 body {
   color: var(--text-color);
-  background: var(--accent-background);
+  background: var(--accent-color);
   font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+  color: var(--offwhite);
+  text-align: center;
+  font-variant: small-caps;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: theme(fontSize.4xl);
+}
+
+h2 {
+  font-size: theme(fontSize.2xl);
 }
 
 @layer utilities {

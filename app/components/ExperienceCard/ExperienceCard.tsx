@@ -6,10 +6,14 @@ interface ExperienceProperties {
 
 function ExperienceCard(props: ExperienceProperties) {
     return (
-        <div className={'card'}>
-            <h3 className={'title'}>{props.title}</h3>
-            <span className={'timeframe'}>{props.timeframe}</span>
-            <div className={'description'}>{props.description}</div>
+        <div className={'space-y-1 rounded-xl border-black bg-offwhite border p-2  drop-shadow-md'}>
+            <header className={'flex flex-row gap-2'}>
+                <h3>{props.title}</h3>
+                <span>{props.timeframe}</span>
+            </header>
+            <main>
+                {props.description}
+            </main>
         </div>
     );
 }
