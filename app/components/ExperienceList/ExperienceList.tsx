@@ -22,10 +22,13 @@ function ExperienceList(props: ExperienceListProperties) {
                     description={experience.description}
                 />
             ))}
-            <button className={'w-40 p-2 bg-accent text-offwhite mt-3 disabled:opacity-50 disabled:cursor-not-allowed'}
-                    onClick={() => setNumberOfExperiences(numberOfExperiences + 3)}
-                    disabled={numberOfExperiences >= props.data.length}>
-                Load more ...
+            <button
+                className={'p-1 pl-6 pr-6 bg-accent text-offwhite text-lg font-bold mt-3 disabled:opacity-25 disabled:cursor-not-allowed text-center'}
+                onClick={() => setNumberOfExperiences(numberOfExperiences + 3)}
+                disabled={numberOfExperiences >= props.data.length}
+                title={'Load more ...'}>
+                Load more ...<br />
+                <small className={'text-xs font-thin'}>({numberOfExperiences} of {props.data.length})</small>
             </button>
         </>)
 }
