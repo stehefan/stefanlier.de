@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import headshot from './images/headshot.png'
 import {IconBrandGithub, IconBrandLinkedin, IconMail} from '@tabler/icons-react';
-import ExperienceCard from "@/app/components/ExperienceCard/ExperienceCard";
 import Link from "next/link";
 import experienceData from "./data/experience.json";
+import ExperienceList from "@/app/components/ExperienceList/ExperienceList";
 
 export default function Home() {
 
@@ -39,15 +39,8 @@ export default function Home() {
                     <header>
                         <h2 className={'mt-5'}>What I&apos;ve been up to lately</h2>
                     </header>
-                    <main className={'flex flex-col gap-2'}>
-                        {experienceData.map((experience, index) => (
-                            <ExperienceCard
-                                key={index}
-                                title={experience.title}
-                                timeframe={experience.timeframe}
-                                description={experience.description}
-                            />
-                        ))}
+                    <main className={'flex flex-col gap-2 items-center'}>
+                        <ExperienceList data={experienceData}/>
                     </main>
                 </section>
             </main>
