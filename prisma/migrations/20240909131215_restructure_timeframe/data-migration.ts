@@ -2,9 +2,11 @@ import {PrismaClient} from '@prisma/client'
 
 const prisma = new PrismaClient()
 
+// Disabled due to compiler errors - see commit for details
 async function main() {
+    /*
     await prisma.$transaction(async (tx) => {
-        const experiences = await tx.experience.findMany()
+        const experiences: Experience[] = await tx.experience.findMany()
 
         for (const experience of experiences) {
             // Remove the square brackets and whitespace from the timeframe
@@ -26,6 +28,7 @@ async function main() {
             })
         }
     })
+    */
 }
 
 main()
