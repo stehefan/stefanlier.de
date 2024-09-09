@@ -50,7 +50,7 @@ export default async function Home() {
                           aria-label={'LinkedIn-Link'}>
                         <IconBrandLinkedin className={'contact-icon size-10'} strokeWidth={1} color={'#fff'}/>
                     </Link>
-                    <Link target={'_blank'} href={'mailto:info@stefanlier.de'} aria-label={'Email'}>
+                    <Link target={'_blank'} href={'mailto:stefan@stefanlier.de'} aria-label={'Email'}>
                         <IconMail className={'contact-icon size-10'} strokeWidth={1} color={'#fff'}/>
                     </Link>
                 </section>
