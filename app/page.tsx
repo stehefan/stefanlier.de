@@ -13,7 +13,6 @@ export default async function Home() {
     return (
         <div className={'max-w-xl p-2 space-y-2 m-10'}>
             <header className={'flex flex-col items-center space-y-2 mb-5'}>
-                <h1>Stefan Lier</h1>
                 <Image
                     className={'rounded-full border-offwhite border'}
                     src={headshot}
@@ -22,9 +21,9 @@ export default async function Home() {
             </header>
             <main className={'flex flex-col items-center space-y-5'}>
                 <section className={'description rounded-2xl border-black bg-offwhite border p-2 drop-shadow-md'}>
-                    Passionate technologist that is more interested in people than a certain tech stack. Driving
-                    culture, growth and personal development is my goal and technology the vehicle to help others
-                    grow and create a culture of knowledge sharing in my projects.
+                    My name is <b>Stefan Lier</b> and I am a passionate technologist that is more interested in people than a
+                    certain tech stack. Driving culture, growth and personal development is my goal and technology the
+                    vehicle to help others grow and create a culture of knowledge sharing in my projects.
                 </section>
                 <section className={'flex flex-row justify-center gap-4 mt-2'}>
                     <Link target={'_blank'} href={'https://www.github.com/stehefan'} aria-label={'Github-Link'}>
