@@ -9,8 +9,10 @@ datasource db {
 }
 
 model Experience {
-  id          Int    @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   title       String
-  timeframe   String @unique
+  timeframe   String   @unique
+  startTime   DateTime @default(now())
+  endTime     DateTime @default(now())
   description String
 }

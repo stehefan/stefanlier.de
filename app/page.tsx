@@ -14,7 +14,15 @@ const openSans = Open_Sans({
 });
 
 export default async function Home() {
-    const experienceData = await prisma.experience.findMany();
+    const experienceData = await prisma.experience.findMany({
+        orderBy: [{
+            endTime: 'desc'
+        },
+            {
+                startTime: 'asc'
+            }
+            ]
+    });
 
     return (
         <div className={`max-w-xl p-2 space-y-2 m-10 ${openSans.variable} font-sans`}>
