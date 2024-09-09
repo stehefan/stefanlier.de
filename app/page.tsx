@@ -2,10 +2,13 @@ import Image from 'next/image';
 import headshot from './images/headshot.png'
 import {IconBrandGithub, IconBrandLinkedin, IconMail} from '@tabler/icons-react';
 import Link from "next/link";
-import experienceData from "./data/experience.json";
 import ExperienceList from "@/app/components/ExperienceList/ExperienceList";
+import { PrismaClient } from '@prisma/client';
 
-export default function Home() {
+const prisma = new PrismaClient();
+
+export default async function Home() {
+    const experienceData = await prisma.experience.findMany();
 
     return (
         <div className={'max-w-xl p-2 space-y-2 m-10'}>
