@@ -68,3 +68,8 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Deployment
+Right now, this project is deployed to Vercel automatically via a hook in vercel which runs the `build` command whenever
+there is a change in this repository. Since this is a nextjs project, it can be hosted anywhere where else as long as
+nodejs environment is available.
