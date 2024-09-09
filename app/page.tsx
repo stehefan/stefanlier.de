@@ -23,7 +23,7 @@ export default async function Home() {
                 <section className={'description rounded-2xl border-black bg-offwhite border p-2 drop-shadow-md'}>
                     My name is <b>Stefan Lier</b> and I am a passionate technologist that is more interested in people than a
                     certain tech stack. Driving culture, growth and personal development is my goal and technology the
-                    vehicle to help others grow and create a culture of knowledge sharing in my projects.
+                    vehicle to help others grow and create a culture of knowledge sharing.
                 </section>
                 <section className={'flex flex-row justify-center gap-4 mt-2'}>
                     <Link target={'_blank'} href={'https://www.github.com/stehefan'} aria-label={'Github-Link'}>
