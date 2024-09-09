@@ -14,6 +14,9 @@ const config: Config = {
         text: "var(--text-color)",
         icon: "var(--icon-color)",
       },
+      fontFamily: {
+        sans: ['var(--font-open-sans)'],
+      }
     },
   },
   plugins: [],

@@ -4,14 +4,20 @@ import {IconBrandGithub, IconBrandLinkedin, IconMail} from '@tabler/icons-react'
 import Link from "next/link";
 import ExperienceList from "@/app/components/ExperienceList/ExperienceList";
 import { PrismaClient } from '@prisma/client';
+import {Open_Sans} from "next/font/google";
 
 const prisma = new PrismaClient();
+
+const openSans = Open_Sans({
+    subsets: ['latin'],
+    variable: '--font-open-sans',
+});
 
 export default async function Home() {
     const experienceData = await prisma.experience.findMany();
 
     return (
-        <div className={'max-w-xl p-2 space-y-2 m-10'}>
+        <div className={`max-w-xl p-2 space-y-2 m-10 ${openSans.variable} font-sans`}>
             <header className={'flex flex-col items-center space-y-2 mb-5'}>
                 <Image
                     className={'rounded-full border-offwhite border'}
