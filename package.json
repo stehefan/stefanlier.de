@@ -13,7 +13,8 @@
     "@tabler/icons-react": "^3.14.0",
     "next": "14.2.8",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-markdown": "^9.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.4.1",

@@ -1,3 +1,5 @@
+import Markdown from "react-markdown";
+
 interface ExperienceProperties {
     title: string;
     timeframe: string;
@@ -12,7 +14,9 @@ function ExperienceCard(props: ExperienceProperties) {
                 <div className={'text-md font-extralight'}>{props.timeframe}</div>
             </header>
             <main>
-                {props.description}
+                <Markdown>
+                    {props.description}
+                </Markdown>
             </main>
         </div>
     );
