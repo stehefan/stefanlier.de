@@ -17,9 +17,7 @@ function ExperienceList(props: ExperienceListProperties) {
             {props.data.slice(0, numberOfExperiences).map((experience, index) => (
                 <ExperienceCard
                     key={index}
-                    title={experience.title}
-                    timeframe={experience.timeframe}
-                    description={experience.description}
+                    data={experience}
                 />
             ))}
             <button

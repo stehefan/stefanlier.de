@@ -1,5 +1,6 @@
 interface Experience {
     title: string;
-    timeframe: string;
     description: string;
+    startTime: Date;
+    endTime: Date;
 }
