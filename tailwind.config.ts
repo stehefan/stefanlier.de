@@ -9,10 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        offwhite: "var(--offwhite)",
-        accent: "var(--accent-color)",
-        text: "var(--text-color)",
-        icon: "var(--icon-color)",
+        offwhite: '#D9D9D9',
+        reddish: {
+          DEFAULT: '#B43F3F',
+          dark: '#9e3235'
+        },
+        accent: '#173B45',
+        text: '#000',
       },
       fontFamily: {
         sans: ['var(--font-open-sans)'],
