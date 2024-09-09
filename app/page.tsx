@@ -31,6 +31,8 @@ export default async function Home() {
                     className={'rounded-full border-offwhite border'}
                     src={headshot}
                     alt="Image of Stefan Lier"
+                    height={256}
+                    width={256}
                 />
             </header>
             <main className={'flex flex-col items-center space-y-5'}>
