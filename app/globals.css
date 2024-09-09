@@ -50,5 +50,6 @@ p {
 }
 
 a {
-  color: var(--reddish);
+    color: theme(colors.reddish.dark);
+    text-decoration: underline;
 }
