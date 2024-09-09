@@ -4,7 +4,7 @@
 
 :root {
   --offwhite: #D9D9D9;
-  --bg-color: #B43F3F;
+  --reddish: #B43F3F;
   --text-color: #000;
   --icon-color: var(--offwhite);
   --accent-color: #173B45;
@@ -12,7 +12,7 @@
 
 body {
   color: var(--text-color);
-  background: var(--bg-color);
+  background: var(--reddish);
   font-family: var(--font-open-sans);
   font-optical-sizing: auto;
 }
@@ -51,6 +51,10 @@ li {
 
 p {
   margin-bottom: theme(margin.2)
+}
+
+a {
+  color: var(--reddish);
 }
 
 @layer utilities {
