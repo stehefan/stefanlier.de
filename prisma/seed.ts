@@ -80,7 +80,7 @@ const main = async () => {
                 "endTime": "2024-08-01 00:00:00.000",
                 "startTime": "2014-10-01 00:00:00.000"
             }
-        ]        ,
+        ],
     });
 
     console.timeEnd("Seeding complete 🌱");
