@@ -3,7 +3,7 @@ import headshot from './images/headshot.png'
 import {IconBrandGithub, IconBrandLinkedin, IconMail} from '@tabler/icons-react';
 import Link from "next/link";
 import ExperienceList from "@/app/components/ExperienceList/ExperienceList";
-import { PrismaClient } from '@prisma/client';
+import {PrismaClient} from '@prisma/client';
 import {Open_Sans} from "next/font/google";
 
 const prisma = new PrismaClient();
@@ -27,9 +27,12 @@ export default async function Home() {
             </header>
             <main className={'flex flex-col items-center space-y-5'}>
                 <section className={'description rounded-2xl border-black bg-offwhite border p-2 drop-shadow-md'}>
-                    My name is <b>Stefan Lier</b> and I am a passionate technologist that is more interested in people than a
-                    certain tech stack. Driving culture, growth and personal development is my goal and technology the
-                    vehicle to help others grow and create a culture of knowledge sharing.
+                    My name is <b>Stefan Lier</b> and I am a passionate technologist that is more interested in people
+                    than a certain tech stack. Driving culture, growth and personal development is my goal and
+                    technology the vehicle to help others grow and create a culture of knowledge sharing.
+                    <br/><br/>
+                    I have been a consultant for a while (see some steps along the way below) and am looking for
+                    something new from January 2025 onwards.
                 </section>
                 <section className={'flex flex-row justify-center gap-4 mt-2'}>
                     <Link target={'_blank'} href={'https://www.github.com/stehefan'} aria-label={'Github-Link'}>
