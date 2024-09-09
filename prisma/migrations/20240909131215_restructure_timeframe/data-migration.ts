@@ -16,8 +16,6 @@ async function main() {
             const startTime = new Date(`${timeframeParts[0]} UTC`)
             const endTime = new Date(`${timeframeParts[1]} UTC`)
 
-            console.log(startTime);
-            console.log(endTime);
 
             await tx.experience.update({
                 where: {id: experience.id},
