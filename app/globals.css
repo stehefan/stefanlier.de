@@ -31,6 +31,28 @@ h2 {
   font-size: theme(fontSize.2xl);
 }
 
+ul {
+  list-style: none inside;
+}
+
+li {
+  padding-top: theme(padding.2);
+  padding-bottom: theme(padding.2);
+  margin-left: theme(margin.5);
+  margin-right: theme(margin.5);
+  position: relative;
+
+  &::before {
+    content: '-';
+    position: absolute;
+    left: calc(-1 * theme(margin.5));
+  }
+}
+
+p {
+  margin-bottom: theme(margin.2)
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
