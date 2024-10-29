@@ -18,7 +18,7 @@
     "@prisma/client": "^5.19.1",
     "@tabler/icons-react": "^3.14.0",
     "date-fns": "^3.6.0",
-    "next": "14.2.8",
+    "next": "14.2.10",
     "prisma": "^5.19.1",
     "react": "^18",
     "react-dom": "^18",
