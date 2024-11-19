@@ -1,4 +1,5 @@
 import type {Metadata} from "next";
+import {PHProvider} from './providers'
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,9 +14,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body className={'antialiased flex flex-col items-center'}>
-        {children}
-        </body>
+        <PHProvider>
+            <body className={'antialiased flex flex-col items-center'}>
+            {children}
+            </body>
+        </PHProvider>
         </html>
     );
 }
