@@ -2,6 +2,7 @@
 
 import ExperienceCard from "@/app/components/ExperienceCard/ExperienceCard";
 import {useState} from "react";
+import {usePostHog} from "posthog-js/react";
 
 interface ExperienceListProperties {
     data: Experience[];
@@ -11,6 +12,14 @@ interface ExperienceListProperties {
 function ExperienceList(props: ExperienceListProperties) {
 
     const [numberOfExperiences, setNumberOfExperiences] = useState(3)
+    const posthog = usePostHog();
+
+    const loadMore = () => {
+        posthog?.capture('load_more', {
+            currently_loaded: numberOfExperiences
+        });
+        setNumberOfExperiences(numberOfExperiences + 3);
+    }
 
     return (
         <>
@@ -22,7 +31,7 @@ function ExperienceList(props: ExperienceListProperties) {
             ))}
             <button
                 className={'p-1 pl-6 pr-6 bg-accent text-offwhite text-lg font-bold mt-3 disabled:opacity-25 disabled:cursor-not-allowed text-center'}
-                onClick={() => setNumberOfExperiences(numberOfExperiences + 3)}
+                onClick={loadMore}
                 disabled={numberOfExperiences >= props.data.length}
                 title={'Load more ...'}>
                 Load more ...<br />
