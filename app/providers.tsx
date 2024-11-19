@@ -9,7 +9,7 @@ export function PHProvider({
                            }: { children: React.ReactNode }) {
     useEffect(() => {
         posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
-            api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
+            api_host: "/ingest",
             person_profiles: 'identified_only',
             capture_pageview: false // Disable automatic pageview capture, as we capture manually
         })
