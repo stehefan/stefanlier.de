@@ -1,16 +1,13 @@
-import type { Metadata } from 'next';
-import { PHProvider } from './providers';
+import type {Metadata} from 'next';
+import {PHProvider} from './providers';
 import './globals.css';
-import dynamic from 'next/dynamic';
+import PostHogPageView from "@/app/PostHogPageView";
+import {Suspense} from "react";
 
 export const metadata: Metadata = {
     title: 'Home of Stefan Lier',
     description: 'Personal Website of Stefan Lier',
 };
-
-const PostHogPageView = dynamic(() => import('./PostHogPageView'), {
-    ssr: false,
-});
 
 export default function RootLayout({
     children,
@@ -21,7 +18,9 @@ export default function RootLayout({
         <html lang="en">
             <PHProvider>
                 <body className="antialiased flex flex-col items-center">
-                    <PostHogPageView />
+                    <Suspense>
+                        <PostHogPageView />
+                    </Suspense>
                     {children}
                 </body>
             </PHProvider>
