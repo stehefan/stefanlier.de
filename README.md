@@ -12,11 +12,11 @@ Node.js versions. Find out more about NVM at https://github.com/nvm-sh/nvm.
 Install the dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 We use [husky](https://typicode.github.io/husky/) to manage git-hooks. It will get automatically installed as part of 
-the `npm install` command and creates a `.husky` folder in the project root in which you can add more git-hooks if
+the `pnpm install` command and creates a `.husky` folder in the project root in which you can add more git-hooks if
 needed. Check out the husky documentation for more information.
 
 ### Database
@@ -58,13 +58,7 @@ This uses the seeds defined in `prisma/seed.ts` to populate the local database (
 After providing the database, you can run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
