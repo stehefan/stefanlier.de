@@ -15,28 +15,28 @@
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
-    "@prisma/client": "^5.22.0",
-    "@tabler/icons-react": "^3.21.0",
+    "@prisma/client": "^6.0.0",
+    "@tabler/icons-react": "^3.23.0",
     "date-fns": "^4.1.0",
     "next": "15.0.3",
-    "posthog-js": "^1.188.0",
-    "prisma": "^5.22.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "posthog-js": "^1.194.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
-    "@commitlint/config-conventional": "^19.5.0",
-    "@types/node": "^22.9.4",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^9",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^9.16.0",
     "eslint-config-next": "15.0.3",
     "husky": "^9.1.7",
-    "postcss": "^8",
+    "postcss": "^8.4.49",
+    "prisma": "^6.0.0",
     "tailwindcss": "^3.4.15",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   }
 }
