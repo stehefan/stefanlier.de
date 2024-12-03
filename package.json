@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
-    "@tabler/icons-react": "^3.23.0",
+    "@tabler/icons-react": "^3.24.0",
     "date-fns": "^4.1.0",
     "next": "15.0.3",
     "posthog-js": "^1.194.1",
