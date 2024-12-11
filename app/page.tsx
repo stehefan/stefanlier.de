@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import headshot from './images/headshot.png';
-import { IconBrandGithub, IconBrandLinkedin, IconMail } from '@tabler/icons-react';
+import {IconBrandBluesky, IconBrandGithub, IconBrandLinkedin, IconMail} from '@tabler/icons-react';
 import Link from 'next/link';
 import ExperienceList from '@/app/components/ExperienceList/ExperienceList';
 import { PrismaClient } from '@prisma/client';
@@ -59,6 +59,9 @@ export default async function Home() {
                         aria-label="LinkedIn-Link"
                     >
                         <IconBrandLinkedin className="contact-icon size-10" strokeWidth={1} color="#fff" />
+                    </Link>
+                    <Link target="_blank" href="https://bsky.app/profile/stehefan.de" aria-label="Bluesky">
+                        <IconBrandBluesky className="contact-icon size-10" strokeWidth={1} color="#fff" />
                     </Link>
                     <Link target="_blank" href="mailto:stefan@stefanlier.de" aria-label="Email">
                         <IconMail className="contact-icon size-10" strokeWidth={1} color="#fff" />
