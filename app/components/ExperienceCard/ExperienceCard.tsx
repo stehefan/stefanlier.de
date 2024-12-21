@@ -1,5 +1,4 @@
 import Markdown from 'react-markdown';
-import { Experience } from '@prisma/client';
 import { format } from 'date-fns';
 
 interface ExperienceProperties {

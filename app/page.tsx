@@ -1,28 +1,25 @@
 import Image from 'next/image';
 import headshot from './images/headshot.png';
-import {IconBrandBluesky, IconBrandGithub, IconBrandLinkedin, IconMail} from '@tabler/icons-react';
+import { IconBrandBluesky, IconBrandGithub, IconBrandLinkedin, IconMail } from '@tabler/icons-react';
 import Link from 'next/link';
 import ExperienceList from '@/app/components/ExperienceList/ExperienceList';
-import { PrismaClient } from '@prisma/client';
 import { Open_Sans } from 'next/font/google';
 
-const prisma = new PrismaClient();
+import data from '@/data/experiences.json';
 
 const openSans = Open_Sans({
     subsets: ['latin'],
     variable: '--font-open-sans',
 });
 
-export default async function Home() {
-    const experienceData = await prisma.experience.findMany({
-        orderBy: [{
-            endTime: 'desc',
-        },
-        {
-            startTime: 'asc',
-        },
-        ],
-    });
+export default async function Home() { 
+    const experienceData: Experience[] = data
+        .sort((a, b) => new Date(b.endTime).getTime() - new Date(a.endTime).getTime())
+        .map((experience) => ({
+            ...experience,
+            startTime: new Date(experience.startTime),
+            endTime: new Date(experience.endTime),
+        }));
 
     return (
         <div className={`max-w-xl p-2 space-y-2 m-10 ${openSans.variable} font-sans`}>
