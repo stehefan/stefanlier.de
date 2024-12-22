@@ -14,8 +14,14 @@ const openSans = Open_Sans({
 
 export default async function Home() { 
     const experienceData: Experience[] = data
-        .sort((a, b) => new Date(b.endTime).getTime() - new Date(a.endTime).getTime())
-        .map((experience) => ({
+    .sort((a, b) => {
+        const endDiff = new Date(b.endTime).getTime() - new Date(a.endTime).getTime();
+        if (endDiff === 0) {
+            return new Date(a.startTime).getTime() - new Date(b.startTime).getTime();
+        }
+        return endDiff;
+    })
+    .map((experience) => ({
             ...experience,
             startTime: new Date(experience.startTime),
             endTime: new Date(experience.endTime),
