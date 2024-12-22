@@ -19,7 +19,7 @@ function ExperienceCard(props: ExperienceProperties) {
             </header>
             <main>
                 <Markdown>
-                    {props.data.description}
+                    {props.data.summary}
                 </Markdown>
             </main>
         </div>
