@@ -27,7 +27,7 @@ function ExperienceCard(props: ExperienceProperties) {
                     {props.data.summary}
                 </section>
                 <div className="flex justify-center items-center">
-                    <button onClick={() => setIsExpanded(!isExpanded)} aria-description={buttonLabel} className={`transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-50 ${buttonClassNames}`.trim()}>
+                    <button onClick={() => setIsExpanded(!isExpanded)} title={buttonLabel} aria-label={buttonLabel} className={`transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-50 ${buttonClassNames}`.trim()}>
                         <IconCircleChevronDown size={30} stroke={1} />
                     </button>
                 </div>
