@@ -1,7 +1,7 @@
 [
     {
-        "title": "Architect",
-        "description": "Being embedded in a team of three architects, I was responsible for aligning the Macro-Architecture with the teams and collecting both business and technical needs for it. This helped me define guidelines for the teams to follow and implement their services against, creating a unified vision for all products. To effectively steer those efforts, I created formats to share, discuss and align team-needs and help them to take ownership of their own implementation-details.",
+        "title": "Solution Architect",
+        "description": "In this role, I focused on aligning Macro-Architecture with product teams by working closely with technical and business leads to understand their requirements and needs, making decisive choices when necessary. I established guidelines for teams to follow and implement their services against, creating a unified product vision through automated API guideline enforcement. Working with the platform team, I co-created infrastructure improvements for all teams, adjusting and adding Terraform modules to align with architectural needs. I independently supported teams by migrating legacy services into containerized and self-contained systems based on Kotlin and Spring Boot, with an emphasis on quick turnaround times and minimal viable products.",
         "summary": "Led macro-architecture alignment across teams while collecting business and technical requirements. Created guidelines and formats to enable team ownership of implementation details.",
         "endTime": "2024-08-01 00:00:00.000",
         "startTime": "2024-02-01 00:00:00.000"
@@ -15,14 +15,14 @@
     },
     {
         "title": "Team and Tech Lead",
-        "description": "Leading a cloud migration project, I orchestrated the technical roadmap and communication with stakeholders. I crafted a modern, event-driven architecture leveraging both on-premise and Google Cloud capabilities. Through Infrastructure-as-Code, I ensured repeatability and accountability in infrastructure changes. My leadership fostered a culture of knowledge sharing, driving community practices and supporting team onboarding in new technologies.",
+        "description": "As technical lead, I guided a team of 3 engineers to drive company-wide cloud adoption through SRE concepts and individual developer and product owner tutoring. I developed a comprehensive cloud migration vision in collaboration with Project Management, Product Owners, and technical stakeholders. Using Kotlin and Spring Boot, I implemented a cloud solution from scratch, coordinating needs and requirements across all parties while establishing the infrastructure for immediate user impact. I developed a self-contained system driven by domain-driven design and an iterative approach, demonstrating the feasibility of this relatively new methodology while ensuring quick user impact.",
         "summary": "Led cloud migration project while crafting modern event-driven architecture. Implemented Infrastructure-as-Code while fostering knowledge sharing culture.",
         "endTime": "2022-12-01 00:00:00.000",
         "startTime": "2022-07-01 00:00:00.000"
     },
     {
         "title": "Site Reliability Engineer",
-        "description": "Responsible for creating reusable components, I automated infrastructure in Terraform, facilitating fast onboarding and deployment for teams. I started an internal open-source initiative, fostering knowledge and code sharing across teams. I connected development teams to share best practices, driving knowledge sharing through various channels and supporting site reliability efforts.",
+        "description": "I was responsible for creating reusable components, automated infrastructure in Terraform, facilitated fast onboarding and deployment for teams. I started an internal open-source initiative, fostering knowledge and code sharing across teams. I connected development teams to share best practices, driving knowledge sharing through various channels and supporting site reliability efforts.",
         "summary": "Created reusable infrastructure components using Terraform and automated deployment processes. Initiated internal open-source program while fostering knowledge sharing across teams.",
         "endTime": "2021-12-01 00:00:00.000",
         "startTime": "2021-08-01 00:00:00.000"
@@ -43,42 +43,42 @@
     },
     {
         "title": "Technical Lead",
-        "description": "As the Solution Architect and Lead Developer, I established infrastructural guidelines and best practices for development. My focus on creating fast and reliable workflows drove the project towards establishing an MVP quickly. My leadership in technical discussions and adoption of cloud-native principles enabled the team to create a scalable and maintainable infrastructure.",
+        "description": "In this position, I spearheaded the creation of a new MVP product from the ground up, leading a cross-functional team as a full-stack engineer covering both infrastructure and Frontend development. I architected and implemented a scalable microservices system hosted in Kubernetes to facilitate market entry. Through iterative development of full-stack applications using Kotlin and React, I enabled quick evaluation of assumptions and rapid time-to-market for the new product. I enhanced operational efficiency by implementing comprehensive technical and product metrics, displaying them in Operational Dashboards for monitoring purposes. The MVP was successfully delivered within 5 months, launching just before the Christmas peak-travel season, progressing from initial ideation to a robust cloud-native application.",
         "summary": "Established infrastructure guidelines and best practices as Solution Architect and Lead Developer. Created fast, reliable workflows while adopting cloud-native principles.",
         "endTime": "2020-04-01 00:00:00.000",
         "startTime": "2019-06-01 00:00:00.000"
     },
     {
         "title": "Full Stack Developer",
-        "description": "I evaluated and implemented an external marketing software, focusing on scalability and response times. My involvement in cross-functional teams ensured alignment with various stakeholders and teams. By driving automation and infrastructure-as-code principles, I facilitated continuous integration and deployment processes, enhancing the project's maintainability and stability.",
+        "description": "Working within a cross-functional team, I evaluated and integrated external marketing software, including essential business logic. I developed scalable services using cloud-infrastructure and Kotlin to meet both organizational and customer demands. My focus included automating infrastructure-as-code principles to streamline continuous integration and deployment processes. I improved project maintainability and stability by introducing comprehensive automated testing of interfaces, contracts, and service integrations.",
         "summary": "Implemented external marketing software with focus on scalability and performance. Drove automation and infrastructure-as-code principles while working with cross-functional teams.",
         "endTime": "2019-05-01 00:00:00.000",
         "startTime": "2018-01-01 00:00:00.000"
     },
     {
         "title": "Technical Product Owner",
-        "description": "Managing the infrastructure of a digital transformation project, I bridged communication between IT providers and development teams. My role involved creating a vision for the future infrastructure, optimizing scalability and maintainability.",
+        "description": "I managed the current state and advanced it to meet new requirements, including communication with internal and external IT-providers and development teams to align their requirements. I created a new infrastructure vision by bridging the gap between internal IT and the project team, optimizing the infrastructure platform to match the needs of the development teams and their product.",
         "summary": "Managed infrastructure for digital transformation while bridging communication between IT providers and dev teams. Created vision for future infrastructure focusing on scalability.",
         "endTime": "2017-12-01 00:00:00.000",
         "startTime": "2017-05-01 00:00:00.000"
     },
     {
         "title": "Platform Engineer",
-        "description": "I contributed to the digital transformation of the company's core product, focusing on infrastructure maintenance and automation. My efforts ensured a high degree of automation in infrastructure changes and execution, enabling efficient development cycles and runtime monitoring.",
+        "description": "In this role, I maintained and advanced the current infrastructure throughout the development cycle, including automating the provisioning and deployment measurements and orchestration of services. I implemented automatic collection and processing of application and infrastructure metrics and logs, enabling the project team to monitor application state and track malfunctions during runtime.",
         "summary": "Contributed to digital transformation through infrastructure maintenance and automation. Enabled efficient development cycles through automated infrastructure changes.",
         "endTime": "2017-04-01 00:00:00.000",
         "startTime": "2016-08-01 00:00:00.000"
     },
     {
         "title": "Full Stack Developer",
-        "description": "Leading front-end engineering, I drove feature development and maintenance, collaborating with cross-functional teams. I played a crucial role in advancing the architecture towards a scalable microservice infrastructure, emphasizing common workflows and technical improvements.",
+        "description": "I significantly improved website performance and user interactions by eliminating obsolete technology and enforcing standards with third-party vendors, achieving a tenfold increase in meaningful first paint. Using Scala and NodeJS, I developed services to transition legacy application code toward a microservice architecture, enabling easily maintainable, small artifacts with multiple daily deployments instead of bi-weekly releases. I established common front-end workflows and created pattern and component libraries for an in-house built framework, leveraging ES2015 instead of jQuery.",
         "summary": "Led front-end engineering and feature development while collaborating with cross-functional teams. Advanced architecture towards scalable microservice infrastructure.",
         "endTime": "2016-07-01 00:00:00.000",
         "startTime": "2014-10-01 00:00:00.000"
     },
     {
         "title": "Managing Sustainable Growth at Netlight",
-        "description": "[Netlight](https://www.netlight.com) is a company built and owned by its employees, fostering motivation for everyone to shape the company's future in alignment with their own needs, vision, and values. I was part of this journey for almost ten years, joining the German branch of Netlight when it had around 60 employees, to today, with over 700 active employees in Germany alone.\n\nDuring this time, I contributed significantly to the growth of Hamburg from 10 employees in 2016 to 170 employees in 2024. Major aspects of my work that was part of driving this growth can be summarized as follows: \n\n* Creating a culture of knowledge sharing by establishing various formats for consultants and other functions within Netlight to exchange thoughts and ideas, challenge each other, and learn through hands-on experience, listening, or observation. \n* Hiring and developing new talent within Netlight, both in consulting and sales and as a disciplinary leader of the company for over six years. This involved creating development plans and goals for employees, aligning them with their personal and Netlight's needs, and coaching colleagues to reach their full potential.\n* Allowing for more diverse talent to be seen in IT by establishing and supporting FINTA-related initiatives and projects together with non-profit and social organizations in Hamburg.\n* Aligning business needs with talent and engagement management, fostering an environment where people and business can grow together regardless of the company's stage.\n* Navigating challenging times with impacts on hiring, people development, and the type of employer Netlight needed to be. This included adjusting hiring strategies, finding ways to onboard and further develop talented colleagues, and identifying business opportunities in less-than-ideal market conditions.",
+        "description": "[Netlight](https://www.netlight.com) is a company built and owned by its employees, fostering motivation for everyone to shape the company's future in alignment with their own needs, vision, and values. I was part of this journey for almost ten years, joining the German branch of Netlight when it had around 60 employees, to today, with over 700 active employees in Germany alone.\n\n During this time, I played a vital role in growing the Hamburg office from 10 employees in 2016 to 170 employees in 2024. My key contributions to the office's growth included establishing a strong knowledge-sharing culture through various formats for consultants and other Netlight functions to exchange ideas, challenge each other, and learn through hands-on experience. I took an active role in hiring and developing new talent within Netlight, both in consulting and sales, while serving as a disciplinary leader for over six years. I worked to promote diversity in IT by establishing and supporting FINTA-related initiatives and projects in collaboration with local social organizations. Throughout my tenure, I successfully balanced business needs with talent and engagement management, creating an environment conducive to both personal and business growth.",
         "summary": "Focused on sustainable growth and knowledge sharing as a consultant at Netlight. Contributed to mentoring, recruitment, and knowledge-sharing initiatives.",
         "endTime": "2024-08-01 00:00:00.000",
         "startTime": "2014-10-01 00:00:00.000"
