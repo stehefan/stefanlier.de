@@ -19,6 +19,9 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-open-sans)'],
+      },
+      boxShadow: {
+        card: 'inset 0 10px 10px -10px var(--background), inset 0 -10px 10px -10px var(--background)',
       }
     },
   },

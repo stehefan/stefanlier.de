@@ -13,14 +13,14 @@ function ExperienceList(props: ExperienceListProperties) {
     const posthog = usePostHog();
 
     return (
-        <>
+        <div className="flex flex-col w-full space-y-3">
             {props.data.map((experience, index) => (
                 <ExperienceCard
                     key={index}
                     data={experience}
                 />
             ))}
-        </>
+        </div>
     );
 }
 

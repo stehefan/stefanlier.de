@@ -4,16 +4,20 @@
 
 :root {
     --icon-color: theme(colors.offwhite);
+    --background: theme(colors.reddish.DEFAULT);
+    --text: theme(colors.black);
+    --card-color: theme(colors.offwhite);
 }
 
 body {
-    color: theme(colors.black);
-    background: theme(colors.reddish.DEFAULT);
+    background: var(--background);
+    color: var(--text);
     font-family: var(--font-open-sans);
     font-optical-sizing: auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: theme(colors.offwhite);
     text-align: center;
     font-weight: 600;

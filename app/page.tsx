@@ -12,24 +12,24 @@ const openSans = Open_Sans({
     variable: '--font-open-sans',
 });
 
-export default async function Home() { 
+export default async function Home() {
     const experienceData: Experience[] = data
-    .sort((a, b) => {
-        const endDiff = new Date(b.endTime).getTime() - new Date(a.endTime).getTime();
-        if (endDiff === 0) {
-            return new Date(a.startTime).getTime() - new Date(b.startTime).getTime();
-        }
-        return endDiff;
-    })
-    .map((experience) => ({
+        .sort((a, b) => {
+            const endDiff = new Date(b.endTime).getTime() - new Date(a.endTime).getTime();
+            if (endDiff === 0) {
+                return new Date(a.startTime).getTime() - new Date(b.startTime).getTime();
+            }
+            return endDiff;
+        })
+        .map((experience) => ({
             ...experience,
             startTime: new Date(experience.startTime),
             endTime: new Date(experience.endTime),
         }));
 
     return (
-        <div className={`max-w-xl p-2 space-y-2 m-10 ${openSans.variable} font-sans`}>
-            <header className="flex flex-col items-center space-y-2 mb-5">
+        <div className={`w-full space-y-2 ${openSans.variable} font-sans flex flex-col items-center mt-5 mb-5`}>
+            <header className="max-w-xl flex flex-col items-center">
                 <Image
                     className="rounded-full border-offwhite border"
                     src={headshot}
@@ -38,8 +38,8 @@ export default async function Home() {
                     width={256}
                 />
             </header>
-            <main className="flex flex-col items-center space-y-5">
-                <section className="description rounded-2xl border-black bg-offwhite border p-2 drop-shadow-md">
+            <main className="flex flex-col items-center w-full space-y-5">
+                <section className="max-w-xl rounded-2xl border-black bg-offwhite border p-2 drop-shadow-md">
                     My name is
                     {' '}
                     <b>Stefan Lier</b>
@@ -52,7 +52,7 @@ export default async function Home() {
                     I have been a consultant for a while (see some steps along the way below) and am looking for
                     something new from January 2025 onwards.
                 </section>
-                <section className="flex flex-row justify-center gap-4 mt-2">
+                <section className="max-w-xl flex flex-row justify-center gap-4">
                     <Link target="_blank" href="https://www.github.com/stehefan" aria-label="Github-Link">
                         <IconBrandGithub className="contact-icon size-10" strokeWidth={1} color="#fff" />
                     </Link>
@@ -70,11 +70,11 @@ export default async function Home() {
                         <IconMail className="contact-icon size-10" strokeWidth={1} color="#fff" />
                     </Link>
                 </section>
-                <section className="space-y-5 ">
+                <section className="space-y-5 w-full">
                     <header>
                         <h2 className="mt-5">What I&apos;ve been up to lately</h2>
                     </header>
-                    <main className="flex flex-col gap-2 items-center">
+                    <main className="flex flex-col gap-2 items-center w-full">
                         <ExperienceList data={experienceData} />
                     </main>
                 </section>
