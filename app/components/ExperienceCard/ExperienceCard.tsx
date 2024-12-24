@@ -1,6 +1,6 @@
 'use client';
 
-import { IconCircleChevronDown } from '@tabler/icons-react';
+import { IconChevronUp } from '@/app/ui/Icon/Icon';
 import { format } from 'date-fns';
 import { useState } from 'react';
 import Markdown from 'react-markdown';
@@ -13,8 +13,9 @@ interface ExperienceProperties {
 function ExperienceCard(props: ExperienceProperties) {
     const [isExpanded, setIsExpanded] = useState(false);
     const descriptionClassNames = isExpanded ? 'max-h-[1000px]' : 'max-h-0';
-    const buttonClassNames = isExpanded ? 'rotate-180' : 'rotate-0';
+    const buttonClassNames = isExpanded ? 'rotate-0' : 'rotate-180';
     const buttonLabel = isExpanded ? 'Collapse the experience card' : 'Expand the experience card';
+
     return (
         <div className="flex flex-col space-y-2 justify-center items-center w-full">
             <div className="max-w-xl space-y-1 rounded-xl border-black bg-offwhite border p-2 drop-shadow-md">
@@ -29,7 +30,7 @@ function ExperienceCard(props: ExperienceProperties) {
                 </section>
                 <div className="flex justify-center items-center">
                     <button onClick={() => setIsExpanded(!isExpanded)} title={buttonLabel} aria-label={buttonLabel} className={`transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-50 ${buttonClassNames}`.trim()}>
-                        <IconCircleChevronDown size={30} stroke={1} />
+                        <IconChevronUp size={30} strokeWidth={1} />
                     </button>
                 </div>
             </div>

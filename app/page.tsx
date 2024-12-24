@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import headshot from './images/headshot.png';
-import { IconBrandBluesky, IconBrandGithub, IconBrandLinkedin, IconMail } from '@tabler/icons-react';
 import Link from 'next/link';
 import ExperienceList from '@/app/components/ExperienceList/ExperienceList';
 import { Open_Sans } from 'next/font/google';
 
 import data from '@/data/experiences.json';
+import { SiBluesky, SiGithub, SiGmail, SiLinkedin } from '@icons-pack/react-simple-icons';
+import { IconMail } from './ui/Icon/Icon';
 
 const openSans = Open_Sans({
     subsets: ['latin'],
@@ -54,17 +55,17 @@ export default async function Home() {
                 </section>
                 <section className="max-w-xl flex flex-row justify-center gap-4">
                     <Link target="_blank" href="https://www.github.com/stehefan" aria-label="Github-Link">
-                        <IconBrandGithub className="contact-icon size-10" strokeWidth={1} color="#fff" />
+                        <SiGithub className="contact-icon size-10" strokeWidth={1} color="#fff" />
                     </Link>
                     <Link
                         target="_blank"
                         href="https://www.linkedin.com/in/stefan-lier/"
                         aria-label="LinkedIn-Link"
                     >
-                        <IconBrandLinkedin className="contact-icon size-10" strokeWidth={1} color="#fff" />
+                        <SiLinkedin className="contact-icon size-10" strokeWidth={1} color="#fff" />
                     </Link>
                     <Link target="_blank" href="https://bsky.app/profile/stehefan.de" aria-label="Bluesky">
-                        <IconBrandBluesky className="contact-icon size-10" strokeWidth={1} color="#fff" />
+                        <SiBluesky className="contact-icon size-10" strokeWidth={1} color="#fff" />
                     </Link>
                     <Link target="_blank" href="mailto:stefan@stefanlier.de" aria-label="Email">
                         <IconMail className="contact-icon size-10" strokeWidth={1} color="#fff" />
