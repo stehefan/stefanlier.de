@@ -4,4 +4,5 @@ interface Experience {
     summary: string;
     startTime: Date;
     endTime: Date;
+    technologies?: string[];
 }

@@ -1,9 +1,10 @@
 'use client';
 
-import Markdown from 'react-markdown';
+import { IconCircleChevronDown } from '@tabler/icons-react';
 import { format } from 'date-fns';
 import { useState } from 'react';
-import { IconChevronsDown, IconCircleChevronDown, IconCircleChevronDownFilled } from '@tabler/icons-react';
+import Markdown from 'react-markdown';
+import TechnologyIcon from '../TechnologyIcon/TechnologyIcon';
 
 interface ExperienceProperties {
     data: Experience;
@@ -32,9 +33,16 @@ function ExperienceCard(props: ExperienceProperties) {
                     </button>
                 </div>
             </div>
-            <div className={`flex flex-col items-center w-full overflow-hidden shadow-card bg-offwhite transition-[max-height] duration-700 delay-150 linear ${descriptionClassNames}`.trim()}>
-                <div className='max-w-4xl p-5'>
+            <div className={`flex flex-col items-center w-full overflow-hidden shadow-card bg-offwhite transition-[max-height] duration-700 delay-50 linear ${descriptionClassNames}`.trim()}>
+                <div className='flex flex-col items-center max-w-4xl p-5'>
                     <Markdown>{props.data.description}</Markdown>
+                    {props.data.technologies && props.data.technologies.length > 0 && (
+                        <div className="flex flex-wrap gap-3 mt-5">
+                            {props.data.technologies.map((technology) => (
+                                <TechnologyIcon key={technology} technology={technology} />
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         </div >
