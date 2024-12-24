@@ -50,8 +50,8 @@ export default async function Home() {
                     technology the vehicle to help others grow and create a culture of knowledge sharing.
                     <br />
                     <br />
-                    I have been a consultant for a while (see some steps along the way below) and am looking for
-                    something new from January 2025 onwards.
+                    I have been a consultant for a while (see some steps along the way below) and am joining
+                    <Link href="https://www.plancraft.de" target="_blank">plancraft</Link> in January 2025.
                 </section>
                 <section className="max-w-xl flex flex-row justify-center gap-4">
                     <Link target="_blank" href="https://www.github.com/stehefan" aria-label="Github-Link">
