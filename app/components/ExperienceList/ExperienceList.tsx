@@ -8,7 +8,7 @@ interface ExperienceListProperties {
 
 function ExperienceList(props: ExperienceListProperties) {
     return (
-        <div className="flex flex-col w-full space-y-3">
+        <div className="flex flex-col space-y-5">
             {props.data.map((experience, index) => (
                 <ExperienceCard
                     key={index}

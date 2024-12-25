@@ -12,41 +12,39 @@ interface ExperienceProperties {
 
 function ExperienceCard(props: ExperienceProperties) {
     const [isExpanded, setIsExpanded] = useState(false);
-    const descriptionClassNames = isExpanded ? 'max-h-[1000px]' : 'max-h-0';
+    const descriptionClassNames = isExpanded ? 'max-h-[1000px]' : 'max-h-[10rem]';
     const buttonClassNames = isExpanded ? 'rotate-0' : 'rotate-180';
     const buttonLabel = isExpanded ? 'Collapse the experience card' : 'Expand the experience card';
 
     return (
-        <div className="flex flex-col space-y-2 justify-center items-center w-full">
-            <div className="max-w-xl space-y-1 rounded-xl border-black bg-offwhite border p-2 drop-shadow-md">
-                <header className="flex flex-col mb-2">
-                    <h3 className="font-bold text-accent">{props.data.title}</h3>
-                    <div className="text-md font-extralight">
-                        {format(props.data.startTime, 'MMM yyyy')} - {format(props.data.endTime, 'MMM yyyy')}
+        <div className="flex flex-col justify-center max-w-xl rounded-xl border-black bg-offwhite border p-2 drop-shadow-md space-y-2">
+            <header className="flex flex-col">
+                <h3 className="font-bold text-accent">{props.data.title}</h3>
+                <div className="text-md font-extralight">
+                    {format(props.data.startTime, 'MMM yyyy')} - {format(props.data.endTime, 'MMM yyyy')}
+                </div>
+            </header>
+            <div className={`flex flex-col items-center line-clamp-5 pb-14 overflow-hidden transition-[max-height] duration-700 delay-50 linear ${descriptionClassNames}`.trim()}>
+                <Markdown>{props.data.description}</Markdown>
+                {props.data.technologies && props.data.technologies.length > 0 && (
+                    <div className="flex flex-wrap gap-3 mt-5">
+                        {props.data.technologies.map((technology) => (
+                            <TechnologyIcon key={technology} technology={technology} />
+                        ))}
                     </div>
-                </header>
-                <section>
-                    {props.data.summary}
-                </section>
-                <div className="flex justify-center items-center">
-                    <button onClick={() => setIsExpanded(!isExpanded)} title={buttonLabel} aria-label={buttonLabel} className={`transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-50 ${buttonClassNames}`.trim()}>
-                        <IconChevronUp size={30} strokeWidth={1} />
-                    </button>
-                </div>
+                )}
             </div>
-            <div className={`flex flex-col items-center w-full overflow-hidden shadow-card bg-offwhite transition-[max-height] duration-700 delay-50 linear ${descriptionClassNames}`.trim()}>
-                <div className='flex flex-col items-center max-w-4xl p-5'>
-                    <Markdown>{props.data.description}</Markdown>
-                    {props.data.technologies && props.data.technologies.length > 0 && (
-                        <div className="flex flex-wrap gap-3 mt-5">
-                            {props.data.technologies.map((technology) => (
-                                <TechnologyIcon key={technology} technology={technology} />
-                            ))}
-                        </div>
-                    )}
-                </div>
+            <div className="absolute bottom-0 left-0 h-16 pb-2 w-full rounded-b-xl flex flex-col justify-end items-center bg-gradient-to-t from-offwhite via-offwhite via-30% to-transparent ">
+                <button
+                    onClick={() => setIsExpanded(!isExpanded)}
+                    title={buttonLabel}
+                    aria-label={buttonLabel}
+                    className={`transition-all duration-300 ease-in-out hover:scale-105 ${buttonClassNames}`.trim()}
+                >
+                    <IconChevronUp size={30} strokeWidth={1} className='bg-offwhite rounded-full' />
+                </button>
             </div>
-        </div >
+        </div>
     );
 }
 
