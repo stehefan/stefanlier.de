@@ -29,12 +29,14 @@ interface TechnologyIconProps {
     technology: string;
     size?: number;
     className?: string;
+    strokeWidth?: number;
 }
 
-export default function TechnologyIcon({ technology, size = 24, className = '' }: TechnologyIconProps) {
+export default function TechnologyIcon({ technology, size = 24, strokeWidth = 1, className = '' }: TechnologyIconProps) {
     const iconProps = {
         size,
-        className
+        className,
+        strokeWidth
     };
 
     switch (technology.toLowerCase()) {
