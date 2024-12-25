@@ -29,7 +29,7 @@ export default async function Home() {
         }));
 
     return (
-        <div className={`w-full space-y-2 ${openSans.variable} font-sans flex flex-col items-center mt-5 mb-5`}>
+        <div className={`w-full space-y-2 ${openSans.variable} font-sans flex flex-col items-center`}>
             <header className="max-w-xl flex flex-col items-center">
                 <Image
                     className="rounded-full border-offwhite border"

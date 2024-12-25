@@ -1,8 +1,8 @@
-import type {Metadata} from 'next';
-import {PHProvider} from './providers';
+import type { Metadata } from 'next';
+import { PHProvider } from './providers';
 import './globals.css';
 import PostHogPageView from "@/app/PostHogPageView";
-import {Suspense} from "react";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
     title: 'Home of Stefan Lier',
@@ -17,7 +17,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <PHProvider>
-                <body className="antialiased flex flex-col items-center">
+                <body className="antialiased flex flex-col items-center p-2">
                     <Suspense>
                         <PostHogPageView />
                     </Suspense>
