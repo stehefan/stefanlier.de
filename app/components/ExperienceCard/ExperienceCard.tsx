@@ -34,14 +34,14 @@ function ExperienceCard(props: ExperienceProperties) {
                     </div>
                 )}
             </div>
-            <div className="absolute bottom-0 left-0 h-16 pb-2 w-full rounded-b-xl flex flex-col justify-end items-center bg-gradient-to-t from-offwhite via-offwhite via-30% to-transparent ">
+            <div className="absolute bottom-0 left-0 h-10 pb-2 w-full rounded-b-xl flex flex-col justify-end items-center bg-gradient-to-t from-offwhite via-offwhite via-50% to-transparent ">
                 <button
                     onClick={() => setIsExpanded(!isExpanded)}
                     title={buttonLabel}
                     aria-label={buttonLabel}
-                    className={`transition-all duration-300 ease-in-out hover:scale-105 ${buttonClassNames}`.trim()}
+                    className={`size-30 bg-offwhite rounded-full border border-black transition-all duration-700 delay-500 linear flex justify-center items-center ${buttonClassNames}`.trim()}
                 >
-                    <IconChevronUp size={30} strokeWidth={1} className='bg-offwhite rounded-full' />
+                    <IconChevronUp size={24} />
                 </button>
             </div>
         </div>
