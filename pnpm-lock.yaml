@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@icons-pack/react-simple-icons':
-        specifier: ^10.2.0
-        version: 10.2.0(react@19.0.0)
+        specifier: ^11.2.0
+        version: 11.2.0(react@19.0.0)
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
@@ -244,8 +244,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@icons-pack/react-simple-icons@10.2.0':
-    resolution: {integrity: sha512-QDUxup8D3GdIIzwGpxQs6bjeFV5mJes25qqf4aqP/PaBYQNCar7AiyD8C14636TosCG0A/QqAUwm/Hviep4d4g==}
+  '@icons-pack/react-simple-icons@11.2.0':
+    resolution: {integrity: sha512-jCJ+1Fe0yiBQGYSfhx8QGU/9o27t8J4Hw3mxHEI9vohRltLSi5CaPzO2fCQcMNeTrAUAm4j+yaDuAutskiKRjA==}
     peerDependencies:
       react: ^16.13 || ^17 || ^18 || ^19
 
@@ -2488,7 +2488,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@icons-pack/react-simple-icons@10.2.0(react@19.0.0)':
+  '@icons-pack/react-simple-icons@11.2.0(react@19.0.0)':
     dependencies:
       react: 19.0.0
 
