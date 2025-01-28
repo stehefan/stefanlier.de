@@ -25,7 +25,7 @@
     "@eslint/compat": "^1.2.5",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.19.0",
-    "@stylistic/eslint-plugin": "^2.13.0",
+    "@stylistic/eslint-plugin": "^3.0.0",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/eslint": "^9.6.1",
     "@types/node": "^22.10.10",
