@@ -5,8 +5,8 @@ import ExperienceList from '@/app/components/ExperienceList/ExperienceList';
 import { Open_Sans } from 'next/font/google';
 
 import data from '@/data/experiences.json';
-import { SiBluesky, SiGithub, SiGmail, SiLinkedin } from '@icons-pack/react-simple-icons';
-import { IconMail } from './ui/Icon/Icon';
+import { SiBluesky, SiGithub } from '@icons-pack/react-simple-icons';
+import { IconLinkedIn, IconMail } from './ui/Icon/Icon';
 
 const openSans = Open_Sans({
     subsets: ['latin'],
@@ -55,7 +55,7 @@ export default async function Home() {
                         href="https://www.linkedin.com/in/stefan-lier/"
                         aria-label="LinkedIn-Link"
                     >
-                        <SiLinkedin className="contact-icon size-10" strokeWidth={1} color="#fff" />
+                        <IconLinkedIn className="contact-icon size-10" strokeWidth={1} color="#fff" />
                     </Link>
                     <Link target="_blank" href="https://bsky.app/profile/stehefan.de" aria-label="Bluesky">
                         <SiBluesky className="contact-icon size-10" strokeWidth={1} color="#fff" />
