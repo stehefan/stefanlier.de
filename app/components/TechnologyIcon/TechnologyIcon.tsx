@@ -13,7 +13,7 @@ import {
     SiKotlin,
     SiKubernetes,
     SiNodedotjs,
-    SiNuxtdotjs,
+    SiNuxt,
     SiPostgresql,
     SiPython,
     SiRabbitmq,
@@ -59,7 +59,7 @@ export default function TechnologyIcon({ technology, size = 24, strokeWidth = 1,
         case 'nodejs':
             return <SiNodedotjs {...iconProps} />;
         case 'nuxt':
-            return <SiNuxtdotjs {...iconProps} />;
+            return <SiNuxt {...iconProps} />;
         case 'postgresql':
             return <SiPostgresql {...iconProps} />;
         case 'rabbitmq':
