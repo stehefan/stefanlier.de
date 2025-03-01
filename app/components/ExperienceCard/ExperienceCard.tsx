@@ -39,7 +39,7 @@ function ExperienceCard(props: ExperienceProperties) {
                     onClick={() => setIsExpanded(!isExpanded)}
                     title={buttonLabel}
                     aria-label={buttonLabel}
-                    className={`size-[30] bg-offwhite rounded-full border border-black transition-all duration-700 delay-500 linear flex justify-center items-center ${buttonClassNames}`.trim()}
+                    className={`size-[30] bg-offwhite rounded-full border border-black transition-all duration-700 delay-500 linear flex justify-center items-center cursor-pointer ${buttonClassNames}`.trim()}
                 >
                     <IconChevronUp size={24} />
                 </button>
