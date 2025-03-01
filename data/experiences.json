@@ -1,5 +1,21 @@
 [
     {
+        "title": "Tech Lead at Plancraft",
+        "description": "At [Plancraft](https://plancraft.com), I am leading three engineers in a cross-functional team responsible to helping our customer to make proper financial decisions and keep their financial health in check. We are using React, Typescript, and Firebase to build a web application that allows our customers to manage their finances and make informed decisions.",
+        "technologies": [
+            "terraform",
+            "docker",
+            "git",
+            "css",
+            "react",
+            "typescript",
+            "gcp",
+            "postgresql",
+            "firebase"
+        ],
+        "startTime": "2025-01-13 00:00:00.000"
+    },
+    {
         "title": "Solution Architect",
         "description": "In this role, I focused on aligning Macro-Architecture with product teams by working closely with technical and business leads to understand their requirements and needs, making decisive choices when necessary. I established guidelines for teams to follow and implement their services against, creating a unified product vision through automated API guideline enforcement. Working with the platform team, I co-created infrastructure improvements for all teams, adjusting and adding Terraform modules to align with architectural needs. I independently supported teams by migrating legacy services into containerized and self-contained systems based on Kotlin and Spring Boot, with an emphasis on quick turnaround times and minimal viable products.",
         "technologies": [
@@ -158,7 +174,7 @@
     {
         "title": "Managing Sustainable Growth at Netlight",
         "description": "[Netlight](https://www.netlight.com) is a company built and owned by its employees, fostering motivation for everyone to shape the company's future in alignment with their own needs, vision, and values. I was part of this journey for almost ten years, joining the German branch of Netlight when it had around 60 employees, to today, with over 700 active employees in Germany alone.\n\n During this time, I played a vital role in growing the Hamburg office from 10 employees in 2016 to 170 employees in 2024. My key contributions to the office's growth included establishing a strong knowledge-sharing culture through various formats for consultants and other Netlight functions to exchange ideas, challenge each other, and learn through hands-on experience. I took an active role in hiring and developing new talent within Netlight, both in consulting and sales, while serving as a disciplinary leader for over six years. I worked to promote diversity in IT by establishing and supporting FINTA-related initiatives and projects in collaboration with local social organizations. Throughout my tenure, I successfully balanced business needs with talent and engagement management, creating an environment conducive to both personal and business growth.",
-        "endTime": "2024-08-01 00:00:00.000",
+        "endTime": "2024-08-31 00:00:00.000",
         "startTime": "2014-10-01 00:00:00.000"
     }
 ]

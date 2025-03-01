@@ -22,7 +22,8 @@ import {
     SiSpringboot,
     SiTerraform,
     SiTypescript,
-    SiVuedotjs
+    SiVuedotjs,
+    SiFirebase,
 } from '@icons-pack/react-simple-icons';
 
 interface TechnologyIconProps {
@@ -94,6 +95,8 @@ export default function TechnologyIcon({ technology, size = 24, strokeWidth = 1,
             return <SiCss3 {...iconProps} />;
         case 'html':
             return <SiHtml5 {...iconProps} />;
+        case 'firebase':
+            return <SiFirebase {...iconProps} />;
         default:
             return <span className={className}>{technology}</span>;
     }

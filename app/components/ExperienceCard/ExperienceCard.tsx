@@ -21,7 +21,7 @@ function ExperienceCard(props: ExperienceProperties) {
             <header className="flex flex-col">
                 <h3 className="font-bold text-accent">{props.data.title}</h3>
                 <div className="text-md font-extralight">
-                    {format(props.data.startTime, 'MMM yyyy')} - {format(props.data.endTime, 'MMM yyyy')}
+                    {format(props.data.startTime, 'MMM yyyy')} - {props.data.endTime ? format(props.data.endTime, 'MMM yyyy') : 'Present'}
                 </div>
             </header>
             <div className={`flex flex-col items-center line-clamp-5 pb-14 overflow-hidden transition-[max-height] duration-700 delay-50 linear ${descriptionClassNames}`.trim()}>
