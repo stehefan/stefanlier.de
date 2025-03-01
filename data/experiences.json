@@ -1,7 +1,7 @@
 [
     {
         "title": "Tech Lead at Plancraft",
-        "description": "At [Plancraft](https://plancraft.com), I am leading three engineers in a cross-functional team responsible to helping our customer to make proper financial decisions and keep their financial health in check. We are using React, Typescript, and Firebase to build a web application that allows our customers to manage their finances and make informed decisions.",
+        "description": "At [Plancraft](https://plancraft.com), I am leading the engineers in a cross-functional team. We are responsible to help our customer to make proper financial decisions and keep their financial health in check. We are using React, Typescript, and Firebase to build a web application that allows our customers to manage their finances and make informed decisions.",
         "technologies": [
             "terraform",
             "docker",
