@@ -24,7 +24,7 @@ function ExperienceCard(props: ExperienceProperties) {
                     {format(props.data.startTime, 'MMM yyyy')} - {props.data.endTime ? format(props.data.endTime, 'MMM yyyy') : 'Present'}
                 </div>
             </header>
-            <div className={`flex flex-col items-center line-clamp-5 pb-14 overflow-hidden transition-[max-height] duration-700 delay-50 linear ${descriptionClassNames}`.trim()}>
+            <div className={`flex flex-col items-center line-clamp-5 pb-14 overflow-hidden transition-[max-height] duration-700 delay-50 ${descriptionClassNames}`.trim()}>
                 <Markdown>{props.data.description}</Markdown>
                 {props.data.technologies && props.data.technologies.length > 0 && (
                     <div className="flex flex-wrap gap-3 mt-5">
@@ -39,7 +39,7 @@ function ExperienceCard(props: ExperienceProperties) {
                     onClick={() => setIsExpanded(!isExpanded)}
                     title={buttonLabel}
                     aria-label={buttonLabel}
-                    className={`size-[30] bg-offwhite rounded-full border border-black transition-all duration-700 delay-500 linear flex justify-center items-center cursor-pointer ${buttonClassNames}`.trim()}
+                    className={`size-[30] bg-offwhite rounded-full border border-black transition-all duration-700 delay-50 flex justify-center items-center cursor-pointer ${buttonClassNames}`.trim()}
                 >
                     <IconChevronUp size={24} />
                 </button>
