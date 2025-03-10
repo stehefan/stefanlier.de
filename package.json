@@ -13,7 +13,7 @@
     "@icons-pack/react-simple-icons": "^12.1.0",
     "date-fns": "^4.1.0",
     "next": "^15.2.1",
-    "posthog-js": "^1.219.1",
+    "posthog-js": "^1.230.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^10.0.1"
