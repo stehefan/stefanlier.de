@@ -1,10 +1,11 @@
 'use client';
 
-import { IconChevronUp } from '@/ui/Icon/Icon';
 import { format } from 'date-fns';
 import { useState } from 'react';
 import Markdown from 'react-markdown';
+
 import TechnologyIcon from '@/components/TechnologyIcon/TechnologyIcon';
+import { IconChevronUp } from '@/ui/Icon/Icon';
 
 interface ExperienceProperties {
     data: Experience;
@@ -21,14 +22,17 @@ function ExperienceCard(props: ExperienceProperties) {
             <header className="flex flex-col">
                 <h3 className="font-bold text-accent">{props.data.title}</h3>
                 <div className="text-md font-extralight">
-                    {format(props.data.startTime, 'MMM yyyy')} - {props.data.endTime ? format(props.data.endTime, 'MMM yyyy') : 'Present'}
+                    {format(props.data.startTime, 'MMM yyyy')}
+                    {' '}
+                    -
+                    {props.data.endTime ? format(props.data.endTime, 'MMM yyyy') : 'Present'}
                 </div>
             </header>
             <div className={`flex flex-col items-center line-clamp-5 pb-14 overflow-hidden transition-[max-height] duration-700 delay-50 ${descriptionClassNames}`.trim()}>
                 <Markdown>{props.data.description}</Markdown>
                 {props.data.technologies && props.data.technologies.length > 0 && (
                     <div className="flex flex-wrap gap-3 mt-5">
-                        {props.data.technologies.map((technology) => (
+                        {props.data.technologies.map(technology => (
                             <TechnologyIcon key={technology} technology={technology} />
                         ))}
                     </div>

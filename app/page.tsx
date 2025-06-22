@@ -1,11 +1,12 @@
-import Image from 'next/image';
-import headshot from './images/headshot.png';
-import Link from 'next/link';
-import ExperienceList from '@/components/ExperienceList/ExperienceList';
+import { SiBluesky, SiGithub } from '@icons-pack/react-simple-icons';
 import { Open_Sans } from 'next/font/google';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import ExperienceList from '@/components/ExperienceList/ExperienceList';
 
 import data from '../data/experiences.json';
-import { SiBluesky, SiGithub } from '@icons-pack/react-simple-icons';
+import headshot from './images/headshot.png';
 import { IconLinkedIn, IconMail } from './ui/Icon/Icon';
 
 type RawExperience = Omit<Experience, 'startTime' | 'endTime'> & {
@@ -27,7 +28,7 @@ export default async function Home() {
             }
             return endDiff;
         })
-        .map((experience) => ({
+        .map(experience => ({
             ...experience,
             startTime: new Date(experience.startTime),
             endTime: new Date(experience.endTime ?? new Date()),
@@ -46,7 +47,11 @@ export default async function Home() {
             </header>
             <main className="flex flex-col items-center w-full space-y-5">
                 <section className="max-w-xl rounded-2xl border-black bg-offwhite border p-2 drop-shadow-md">
-                    My name is <b>Stefan Lier</b> and I am a passionate technologist that is more interested in
+                    My name is
+                    {' '}
+                    <b>Stefan Lier</b>
+                    {' '}
+                    and I am a passionate technologist that is more interested in
                     people and solutions than a certain tech stack. Driving culture, growth and personal
                     development is my goal and technology the vehicle to help others grow and create a
                     culture of knowledge sharing.

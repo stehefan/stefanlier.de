@@ -1,10 +1,10 @@
-import { IconAzure, IconJava } from '@/ui/Icon/Icon';
 import {
     SiAmazonwebservices,
     SiAnsible,
     SiApachekafka,
     SiCss3,
     SiDocker,
+    SiFirebase,
     SiGit,
     SiGnubash,
     SiGooglecloud,
@@ -23,8 +23,9 @@ import {
     SiTerraform,
     SiTypescript,
     SiVuedotjs,
-    SiFirebase,
 } from '@icons-pack/react-simple-icons';
+
+import { IconAzure, IconJava } from '@/ui/Icon/Icon';
 
 interface TechnologyIconProps {
     technology: string;
@@ -37,20 +38,34 @@ export default function TechnologyIcon({ technology, size = 24, strokeWidth = 1,
     const iconProps = {
         size,
         className,
-        strokeWidth
+        strokeWidth,
     };
 
     switch (technology.toLowerCase()) {
+        case 'ansible':
+            return <SiAnsible {...iconProps} />;
         case 'aws':
             return <SiAmazonwebservices {...iconProps} />;
-        case 'gcp':
-            return <SiGooglecloud {...iconProps} />;
         case 'azure':
             return <IconAzure {...iconProps} />;
-        case 'javascript':
-            return <SiJavascript {...iconProps} />;
+        case 'bash':
+            return <SiGnubash {...iconProps} />;
+        case 'css':
+            return <SiCss3 {...iconProps} />;
+        case 'docker':
+            return <SiDocker {...iconProps} />;
+        case 'firebase':
+            return <SiFirebase {...iconProps} />;
+        case 'gcp':
+            return <SiGooglecloud {...iconProps} />;
+        case 'git':
+            return <SiGit {...iconProps} />;
+        case 'html':
+            return <SiHtml5 {...iconProps} />;
         case 'java':
             return <IconJava {...iconProps} />;
+        case 'javascript':
+            return <SiJavascript {...iconProps} />;
         case 'kafka':
             return <SiApachekafka {...iconProps} />;
         case 'kotlin':
@@ -63,6 +78,8 @@ export default function TechnologyIcon({ technology, size = 24, strokeWidth = 1,
             return <SiNuxt {...iconProps} />;
         case 'postgresql':
             return <SiPostgresql {...iconProps} />;
+        case 'python':
+            return <SiPython {...iconProps} />;
         case 'rabbitmq':
             return <SiRabbitmq {...iconProps} />;
         case 'react':
@@ -70,6 +87,7 @@ export default function TechnologyIcon({ technology, size = 24, strokeWidth = 1,
         case 'scala':
             return <SiScala {...iconProps} />;
         case 'springboot':
+        case 'spring-boot':
             return <SiSpringboot {...iconProps} />;
         case 'terraform':
             return <SiTerraform {...iconProps} />;
@@ -77,27 +95,7 @@ export default function TechnologyIcon({ technology, size = 24, strokeWidth = 1,
             return <SiTypescript {...iconProps} />;
         case 'vue-js':
             return <SiVuedotjs {...iconProps} />;
-        case 'docker':
-            return <SiDocker {...iconProps} />;
-        case 'git':
-            return <SiGit {...iconProps} />;
-        case 'spring-boot':
-            return <SiSpringboot {...iconProps} />;
-        case 'rabbitmq':
-            return <SiRabbitmq {...iconProps} />;
-        case 'ansible':
-            return <SiAnsible {...iconProps} />;
-        case 'bash':
-            return <SiGnubash {...iconProps} />;
-        case 'python':
-            return <SiPython {...iconProps} />;
-        case 'css':
-            return <SiCss3 {...iconProps} />;
-        case 'html':
-            return <SiHtml5 {...iconProps} />;
-        case 'firebase':
-            return <SiFirebase {...iconProps} />;
         default:
             return <span className={className}>{technology}</span>;
     }
-} 
+}

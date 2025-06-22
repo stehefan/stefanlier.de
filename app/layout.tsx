@@ -1,8 +1,11 @@
-import type { Metadata } from 'next';
-import { PHProvider } from './providers';
 import './globals.css';
-import PostHogPageView from "@/PostHogPageView";
-import { Suspense } from "react";
+
+import type { Metadata } from 'next';
+import { Suspense } from 'react';
+
+import PostHogPageView from '@/PostHogPageView';
+
+import { PHProvider } from './providers';
 
 export const metadata: Metadata = {
     title: 'Home of Stefan Lier',
