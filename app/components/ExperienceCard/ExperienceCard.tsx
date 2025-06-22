@@ -1,10 +1,10 @@
 'use client';
 
-import { IconChevronUp } from '@/app/ui/Icon/Icon';
+import { IconChevronUp } from '@/ui/Icon/Icon';
 import { format } from 'date-fns';
 import { useState } from 'react';
 import Markdown from 'react-markdown';
-import TechnologyIcon from '../TechnologyIcon/TechnologyIcon';
+import TechnologyIcon from '@/components/TechnologyIcon/TechnologyIcon';
 
 interface ExperienceProperties {
     data: Experience;

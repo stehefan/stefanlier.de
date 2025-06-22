@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { PHProvider } from './providers';
 import './globals.css';
-import PostHogPageView from "@/app/PostHogPageView";
+import PostHogPageView from "@/PostHogPageView";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {

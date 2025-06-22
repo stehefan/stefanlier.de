@@ -1,6 +1,6 @@
 'use client';
 
-import ExperienceCard from '@/app/components/ExperienceCard/ExperienceCard';
+import ExperienceCard from '@/components/ExperienceCard/ExperienceCard';
 
 interface ExperienceListProperties {
     data: Experience[];

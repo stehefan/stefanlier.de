@@ -1,4 +1,4 @@
-import { IconJava, IconAzure } from '@/app/ui/Icon/Icon';
+import { IconAzure, IconJava } from '@/ui/Icon/Icon';
 import {
     SiAmazonwebservices,
     SiAnsible,

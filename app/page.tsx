@@ -1,12 +1,17 @@
 import Image from 'next/image';
 import headshot from './images/headshot.png';
 import Link from 'next/link';
-import ExperienceList from '@/app/components/ExperienceList/ExperienceList';
+import ExperienceList from '@/components/ExperienceList/ExperienceList';
 import { Open_Sans } from 'next/font/google';
 
-import data from '@/data/experiences.json';
+import data from '../data/experiences.json';
 import { SiBluesky, SiGithub } from '@icons-pack/react-simple-icons';
 import { IconLinkedIn, IconMail } from './ui/Icon/Icon';
+
+type RawExperience = Omit<Experience, 'startTime' | 'endTime'> & {
+    startTime: string;
+    endTime?: string;
+};
 
 const openSans = Open_Sans({
     subsets: ['latin'],
@@ -14,7 +19,7 @@ const openSans = Open_Sans({
 });
 
 export default async function Home() {
-    const experienceData: Experience[] = data
+    const experienceData: Experience[] = (data as RawExperience[])
         .sort((a, b) => {
             const endDiff = new Date(b.endTime ?? new Date()).getTime() - new Date(a.endTime ?? new Date()).getTime();
             if (endDiff === 0) {
