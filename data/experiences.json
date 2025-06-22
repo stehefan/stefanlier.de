@@ -2,93 +2,35 @@
     {
         "title": "Tech Lead at Plancraft",
         "description": "At [Plancraft](https://plancraft.com), I am leading the engineers in a cross-functional team. We are responsible to help our customer to make proper financial decisions and keep their financial health in check. We are using React, Typescript, and Firebase to build a web application that allows our customers to manage their finances and make informed decisions.",
-        "technologies": [
-            "terraform",
-            "docker",
-            "git",
-            "css",
-            "react",
-            "typescript",
-            "gcp",
-            "postgresql",
-            "firebase"
-        ],
         "startTime": "2025-01-13 00:00:00.000"
     },
     {
         "title": "Solution Architect",
         "description": "In this role, I focused on aligning Macro-Architecture with product teams by working closely with technical and business leads to understand their requirements and needs, making decisive choices when necessary. I established guidelines for teams to follow and implement their services against, creating a unified product vision through automated API guideline enforcement. Working with the platform team, I co-created infrastructure improvements for all teams, adjusting and adding Terraform modules to align with architectural needs. I independently supported teams by migrating legacy services into containerized and self-contained systems based on Kotlin and Spring Boot, with an emphasis on quick turnaround times and minimal viable products.",
-        "technologies": [
-            "kubernetes",
-            "kotlin",
-            "spring-boot",
-            "terraform",
-            "docker",
-            "git",
-            "vue-js",
-            "css",
-            "nuxt",
-            "typescript",
-            "gcp",
-            "postgresql"
-        ],
         "endTime": "2024-08-01 00:00:00.000",
         "startTime": "2024-02-01 00:00:00.000"
     },
     {
         "title": "Product Architect",
         "description": "As a Product Architect, I provided guidance for five application teams, aligning product architectures with the macro-architecture. I facilitated product-related and technical formats to understand needs and coordinate implementation efforts. Being part of the teams allowed me to maintain proximity and ensure alignment between micro and macro architectures. My approach facilitated swift decision-making and effective development coordination, fostering a culture of knowledge sharing across teams.",
-        "technologies": [
-            "kubernetes",
-            "terraform",
-            "docker",
-            "git",
-            "azure",
-            "kafka",
-            "bash"
-        ],
         "endTime": "2024-01-01 00:00:00.000",
         "startTime": "2023-01-01 00:00:00.000"
     },
     {
         "title": "Team and Tech Lead",
         "description": "As technical lead, I guided a team of 3 engineers to drive company-wide cloud adoption through SRE concepts and individual developer and product owner tutoring. I developed a comprehensive cloud migration vision in collaboration with Project Management, Product Owners, and technical stakeholders. Using Kotlin and Spring Boot, I implemented a cloud solution from scratch, coordinating needs and requirements across all parties while establishing the infrastructure for immediate user impact. I developed a self-contained system driven by domain-driven design and an iterative approach, demonstrating the feasibility of this relatively new methodology while ensuring quick user impact.",
-        "technologies": [
-            "kotlin",
-            "spring-boot",
-            "react",
-            "css",
-            "typescript",
-            "terraform",
-            "docker",
-            "git",
-            "gcp",
-            "kafka"
-        ],
         "endTime": "2022-12-01 00:00:00.000",
         "startTime": "2022-07-01 00:00:00.000"
     },
     {
         "title": "Site Reliability Engineer",
         "description": "I was responsible for creating reusable components, automated infrastructure in Terraform, facilitated fast onboarding and deployment for teams. I started an internal open-source initiative, fostering knowledge and code sharing across teams. I connected development teams to share best practices, driving knowledge sharing through various channels and supporting site reliability efforts.",
-        "technologies": [
-            "azure",
-            "terraform",
-            "docker",
-            "git",
-            "kafka",
-            "postgresql"
-        ],
         "endTime": "2021-12-01 00:00:00.000",
         "startTime": "2021-08-01 00:00:00.000"
     },
     {
         "title": "Solution Architect",
         "description": "I played a crucial role in defining technical infrastructure and architectural guidelines, enabling scalable and maintainable application landscapes. My focus on implementation speed without sacrificing quality ensured rapid end user acceptance. Facilitating technical discussions and embracing a cloud-native approach, I helped create a low-maintenance infrastructure and drove development with a pragmatic approach.",
-        "technologies": [
-            "java",
-            "rabbitmq"
-        ],
         "endTime": "2021-07-01 00:00:00.000",
         "startTime": "2021-01-01 00:00:00.000"
     },
@@ -101,37 +43,12 @@
     {
         "title": "Technical Lead",
         "description": "In this position, I spearheaded the creation of a new MVP product from the ground up, leading a cross-functional team as a full-stack engineer covering both infrastructure and Frontend development. I architected and implemented a scalable microservices system hosted in Kubernetes to facilitate market entry. Through iterative development of full-stack applications using Kotlin and React, I enabled quick evaluation of assumptions and rapid time-to-market for the new product. I enhanced operational efficiency by implementing comprehensive technical and product metrics, displaying them in Operational Dashboards for monitoring purposes. The MVP was successfully delivered within 5 months, launching just before the Christmas peak-travel season, progressing from initial ideation to a robust cloud-native application.",
-        "technologies": [
-            "kotlin",
-            "react",
-            "css",
-            "typescript",
-            "terraform",
-            "docker",
-            "git",
-            "azure",
-            "kafka",
-            "postgresql",
-            "aws"
-        ],
         "endTime": "2020-04-01 00:00:00.000",
         "startTime": "2019-06-01 00:00:00.000"
     },
     {
         "title": "Full Stack Developer",
         "description": "Working within a cross-functional team, I evaluated and integrated external marketing software, including essential business logic. I developed scalable services using cloud-infrastructure and Kotlin to meet both organizational and customer demands. My focus included automating infrastructure-as-code principles to streamline continuous integration and deployment processes. I improved project maintainability and stability by introducing comprehensive automated testing of interfaces, contracts, and service integrations.",
-        "technologies": [
-            "kotlin",
-            "spring-boot",
-            "react",
-            "css",
-            "typescript",
-            "terraform",
-            "docker",
-            "git",
-            "aws",
-            "kafka"
-        ],
         "endTime": "2019-05-01 00:00:00.000",
         "startTime": "2018-01-01 00:00:00.000"
     },
@@ -144,30 +61,12 @@
     {
         "title": "Platform Engineer",
         "description": "In this role, I maintained and advanced the current infrastructure throughout the development cycle, including automating the provisioning and deployment measurements and orchestration of services. I implemented automatic collection and processing of application and infrastructure metrics and logs, enabling the project team to monitor application state and track malfunctions during runtime.",
-        "technologies": [
-            "ansible",
-            "bash",
-            "python",
-            "docker",
-            "git",
-            "aws"
-        ],
         "endTime": "2017-04-01 00:00:00.000",
         "startTime": "2016-08-01 00:00:00.000"
     },
     {
         "title": "Full Stack Developer",
         "description": "I significantly improved website performance and user interactions by eliminating obsolete technology and enforcing standards with third-party vendors, achieving a tenfold increase in meaningful first paint. Using Scala and NodeJS, I developed services to transition legacy application code toward a microservice architecture, enabling easily maintainable, small artifacts with multiple daily deployments instead of bi-weekly releases. I established common front-end workflows and created pattern and component libraries for an in-house built framework, leveraging ES2015 instead of jQuery.",
-        "technologies": [
-            "html",
-            "javascript",
-            "css",
-            "nodejs",
-            "scala",
-            "java",
-            "docker",
-            "git"
-        ],
         "endTime": "2016-07-01 00:00:00.000",
         "startTime": "2014-10-01 00:00:00.000"
     },
