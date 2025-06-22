@@ -18,16 +18,16 @@ function ExperienceCard(props: ExperienceProperties) {
 
     return (
         <div className="flex flex-col justify-center max-w-xl rounded-xl border-black bg-offwhite border p-2 drop-shadow-md space-y-2">
-            <header className="flex flex-col">
+            <header className="flex flex-col cursor-pointer" onClick={() => setIsExpanded(!isExpanded)}>
                 <h3 className="font-bold text-accent">{props.data.title}</h3>
-                <div className="text-md font-extralight">
+                <div className="text-md font-normal">
                     {format(props.data.startTime, 'MMM yyyy')}
                     {' '}
                     -
                     {props.data.endTime ? format(props.data.endTime, 'MMM yyyy') : 'Present'}
                 </div>
             </header>
-            <div className={`flex flex-col items-center line-clamp-5 pb-14 overflow-hidden transition-[max-height] duration-700 delay-50 ${descriptionClassNames}`.trim()}>
+            <div className={`flex flex-col items-center line-clamp-5 pb-14 overflow-hidden transition-[max-height] duration-300 delay-50 ${descriptionClassNames}`.trim()}>
                 <Markdown>{props.data.description}</Markdown>
                 {props.data.technologies && props.data.technologies.length > 0 && (
                     <div className="flex flex-wrap gap-3 mt-5">
@@ -42,7 +42,7 @@ function ExperienceCard(props: ExperienceProperties) {
                     onClick={() => setIsExpanded(!isExpanded)}
                     title={buttonLabel}
                     aria-label={buttonLabel}
-                    className={`size-[30] bg-offwhite rounded-full border border-black transition-all duration-700 delay-50 flex justify-center items-center cursor-pointer ${buttonClassNames}`.trim()}
+                    className={`size-[30] bg-offwhite rounded-full border border-black transition-all duration-300 delay-50 flex justify-center items-center cursor-pointer ${buttonClassNames}`.trim()}
                 >
                     <Icon name="chevron-up" />
                 </button>
