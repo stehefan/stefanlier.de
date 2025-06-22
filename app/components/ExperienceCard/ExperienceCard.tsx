@@ -4,8 +4,7 @@ import { format } from 'date-fns';
 import { useState } from 'react';
 import Markdown from 'react-markdown';
 
-import TechnologyIcon from '@/components/TechnologyIcon/TechnologyIcon';
-import { IconChevronUp } from '@/ui/Icon/Icon';
+import { Icon } from '@/components/Icon/Icon';
 
 interface ExperienceProperties {
     data: Experience;
@@ -33,7 +32,7 @@ function ExperienceCard(props: ExperienceProperties) {
                 {props.data.technologies && props.data.technologies.length > 0 && (
                     <div className="flex flex-wrap gap-3 mt-5">
                         {props.data.technologies.map(technology => (
-                            <TechnologyIcon key={technology} technology={technology} />
+                            <Icon key={technology} name={technology} />
                         ))}
                     </div>
                 )}
@@ -45,7 +44,7 @@ function ExperienceCard(props: ExperienceProperties) {
                     aria-label={buttonLabel}
                     className={`size-[30] bg-offwhite rounded-full border border-black transition-all duration-700 delay-50 flex justify-center items-center cursor-pointer ${buttonClassNames}`.trim()}
                 >
-                    <IconChevronUp size={24} />
+                    <Icon name="chevron-up" />
                 </button>
             </div>
         </div>

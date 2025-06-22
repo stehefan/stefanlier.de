@@ -1,18 +1,12 @@
-import { SiBluesky, SiGithub } from '@icons-pack/react-simple-icons';
 import { Open_Sans } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import ExperienceList from '@/components/ExperienceList/ExperienceList';
+import { Icon } from '@/components/Icon/Icon';
+import { getProcessedExperiences } from '@/lib/experience';
 
-import data from '../data/experiences.json';
 import headshot from './images/headshot.png';
-import { IconLinkedIn, IconMail } from './ui/Icon/Icon';
-
-type RawExperience = Omit<Experience, 'startTime' | 'endTime'> & {
-    startTime: string;
-    endTime?: string;
-};
 
 const openSans = Open_Sans({
     subsets: ['latin'],
@@ -20,19 +14,7 @@ const openSans = Open_Sans({
 });
 
 export default async function Home() {
-    const experienceData: Experience[] = (data as RawExperience[])
-        .sort((a, b) => {
-            const endDiff = new Date(b.endTime ?? new Date()).getTime() - new Date(a.endTime ?? new Date()).getTime();
-            if (endDiff === 0) {
-                return new Date(a.startTime).getTime() - new Date(b.startTime).getTime();
-            }
-            return endDiff;
-        })
-        .map(experience => ({
-            ...experience,
-            startTime: new Date(experience.startTime),
-            endTime: new Date(experience.endTime ?? new Date()),
-        }));
+    const experienceData: Experience[] = getProcessedExperiences();
 
     return (
         <div className={`w-full space-y-2 ${openSans.variable} font-sans flex flex-col items-center`}>
@@ -57,21 +39,21 @@ export default async function Home() {
                     culture of knowledge sharing.
                 </section>
                 <section className="max-w-xl flex flex-row justify-center gap-4">
-                    <Link target="_blank" href="https://www.github.com/stehefan" aria-label="Github-Link">
-                        <SiGithub className="contact-icon size-10" strokeWidth={1} color="#fff" />
+                    <Link target="_blank" href="https://www.github.com/stehefan" aria-label="View my profile on GitHub">
+                        <Icon name="github" className="contact-icon size-10 text-offwhite" />
                     </Link>
                     <Link
                         target="_blank"
                         href="https://www.linkedin.com/in/stefan-lier/"
-                        aria-label="LinkedIn-Link"
+                        aria-label="View my profile on LinkedIn"
                     >
-                        <IconLinkedIn className="contact-icon size-10" strokeWidth={1} color="#fff" />
+                        <Icon name="linkedin" className="contact-icon size-10 text-offwhite" />
                     </Link>
-                    <Link target="_blank" href="https://bsky.app/profile/stehefan.de" aria-label="Bluesky">
-                        <SiBluesky className="contact-icon size-10" strokeWidth={1} color="#fff" />
+                    <Link target="_blank" href="https://bsky.app/profile/stehefan.de" aria-label="View my profile on Bluesky">
+                        <Icon name="bluesky" className="contact-icon size-10 text-offwhite" />
                     </Link>
-                    <Link target="_blank" href="mailto:stefan@stefanlier.de" aria-label="Email">
-                        <IconMail className="contact-icon size-10" strokeWidth={1} color="#fff" />
+                    <Link target="_blank" href="mailto:stefan@stefanlier.de" aria-label="Send me an email">
+                        <Icon name="mail" className="contact-icon size-10 text-offwhite" />
                     </Link>
                 </section>
                 <section className="space-y-5 w-full">
