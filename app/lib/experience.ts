@@ -17,6 +17,6 @@ export const getProcessedExperiences = (): Experience[] => {
         .map((experience: RawExperience) => ({
             ...experience,
             startTime: new Date(experience.startTime),
-            endTime: new Date(experience.endTime ?? new Date()),
+            endTime: experience.endTime ? new Date(experience.endTime) : undefined,
         }));
 };

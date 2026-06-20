@@ -20,7 +20,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <PHProvider>
-                <body className="antialiased flex flex-col items-center p-2">
+                <body className="antialiased">
                     <Suspense>
                         <PostHogPageView />
                     </Suspense>

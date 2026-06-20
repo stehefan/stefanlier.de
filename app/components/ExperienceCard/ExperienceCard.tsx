@@ -5,24 +5,38 @@ import Markdown from 'react-markdown';
 
 interface ExperienceProperties {
     data: Experience;
+    featured?: boolean;
 }
 
+const getFeaturedDescription = (description: string) => {
+    const firstParagraph = description.split('\n\n')[0].trim();
+
+    if (firstParagraph.length <= 340) {
+        return firstParagraph;
+    }
+
+    const sentenceExcerpt = firstParagraph
+        .split('. ')
+        .slice(0, 2)
+        .join('. ');
+
+    return `${sentenceExcerpt.replace(/\.$/, '')}.`;
+};
+
 function ExperienceCard(props: ExperienceProperties) {
+    const dateRange = `${format(props.data.startTime, 'MMM yyyy')} - ${props.data.endTime ? format(props.data.endTime, 'MMM yyyy') : 'Present'}`;
+    const description = props.featured ? getFeaturedDescription(props.data.description) : props.data.description;
+
     return (
-        <div className="flex flex-col justify-center max-w-xl rounded-xl border-black bg-offwhite border p-4 drop-shadow-md space-y-2">
-            <header className="flex flex-col">
-                <h3 className="font-bold text-accent">{props.data.title}</h3>
-                <div className="text-md font-normal">
-                    {format(props.data.startTime, 'MMM yyyy')}
-                    {' '}
-                    -
-                    {props.data.endTime ? format(props.data.endTime, 'MMM yyyy') : 'Present'}
-                </div>
+        <article className={props.featured ? 'experience-card experience-card-featured' : 'experience-card'}>
+            <header>
+                <p>{dateRange}</p>
+                <h3>{props.data.title}</h3>
             </header>
-            <main>
-                <Markdown>{props.data.description}</Markdown>
-            </main>
-        </div>
+            <div className="experience-body">
+                <Markdown>{description}</Markdown>
+            </div>
+        </article>
     );
 }
 
